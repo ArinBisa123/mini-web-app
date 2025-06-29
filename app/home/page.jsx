@@ -1,7 +1,4 @@
 import NavigationBar from "./Components/NavigationBar";
-// import SkinTypeCard from "@/home/Components/SkinTypeCard";
-// import Highlights from "./Components/Highlights";
-// import UseInstructions from "./Components/UseInstructions";
 import { Button } from "antd";
 import { metadata } from "@/app/layout";
 

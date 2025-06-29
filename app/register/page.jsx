@@ -34,26 +34,30 @@ export default function Register() {
     }
   };
   return (
-    <>
+    <div>
       {hasSubmit && isSuccess && (
-        <Alert
-          message="Pendaftaran berhasil!"
-          description="Anda akan diarahkan ke halaman login..."
-          type="success"
-          showIcon
-          closable
-          className="absolute w-2/5 top-0 left-120 z-30"
-        />
+        <div className="fixed w-2/5 top-0 left-120 z-30">
+          <Alert
+            message="Pendaftaran berhasil!"
+            description="Anda akan diarahkan ke halaman login..."
+            type="success"
+            showIcon
+            closable
+            className=""
+          />
+        </div>
       )}
       {hasSubmit && !isSuccess && (
-        <Alert
-          message="Pendaftaran gagal!"
-          description="Nama pengguna sudah ada yang punya "
-          type="error"
-          showIcon
-          closable
-          className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-2/5 "
-        />
+        <div className="fixed w-2/5 top-0 left-120 z-30">
+          <Alert
+            message="Pendaftaran gagal!"
+            description="Nama pengguna sudah ada yang punya "
+            type="error"
+            showIcon
+            closable
+            className=""
+          />
+        </div>
       )}
       <div className="flex flex-col justify-center items-center w-full h-screen space-y-4">
         <div className="flex flex-col items-center ">
@@ -114,6 +118,6 @@ export default function Register() {
           </p>
         </Form>
       </div>
-    </>
+    </div>
   );
 }
