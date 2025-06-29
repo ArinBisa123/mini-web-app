@@ -1,6 +1,7 @@
 import NavigationBar from "./Components/NavigationBar";
 import { Button } from "antd";
 import { metadata } from "@/app/layout";
+import ServicesCard from "./Components/ServicesCard";
 
 export default function Welcome() {
   return (
@@ -31,30 +32,28 @@ export default function Welcome() {
           </article>
         </section>
 
-        <section className="flex min-h-[80vh] items-center justify-center">
+        <section className="flex min-h-[50vh] items-center justify-center">
           <article className="w-3/4 py-8 space-y-12">
             <div className="mx-auto w-fit space-y-4 border-b-2 border-gray-300 px-4 pb-4">
               <h2 className="text-center text-3xl tracking-wide">
-                <span className="font-caveat text-4xl font-bold">
-                  Layanan TemuDataku{" "}
-                </span>
+                Layanan TemuDataku
               </h2>
+            </div>
+            <div className="flex flex-col items-center space-y-4">
+              <ServicesCard />
             </div>
           </article>
         </section>
-        <section className="flex min-h-[80vh] items-center justify-center">
+        <section className="flex min-h-[70vh] items-center justify-center">
           <article className="w-3/4 py-8 space-y-12">
             <div className="mx-auto w-fit space-y-4 border-b-2 border-gray-300 px-4 pb-4">
               <h2 className="text-center text-3xl tracking-wide">
-                <span className="font-caveat text-4xl font-bold">
-                  Tentang TemuDataku
-                </span>
+                Tentang TemuDataku
               </h2>
             </div>
+
             <p className="text-lg">
-              <span className="font-caveat text-4xl font-bold">
-                {metadata.title}{" "}
-              </span>
+              <span className="text-4xl font-bold">{metadata.title} </span>
               {metadata.description}
             </p>
           </article>
